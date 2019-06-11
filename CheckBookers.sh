@@ -9,8 +9,7 @@ fi
 
 readonly GITHUB_URL=$1
 
-#dir_name=bookers1${bookers1_num}
-dir_name=bookers
+dir_name=BookersRspecTest
 
 cd .. #このリポジトリから抜ける
 rm -rf $dirname #同じ名前のディレクトリを強制消去
