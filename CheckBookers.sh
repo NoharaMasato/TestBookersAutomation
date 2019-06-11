@@ -13,12 +13,12 @@ readonly GITHUB_URL=$1
 dir_name=bookers
 
 cd .. #このリポジトリから抜ける
-rm -rf $dirname
+rm -rf $dirname #同じ名前のディレクトリを強制消去
 git clone $GITHUB_URL $dir_name
 
 cd $dir_name
 
-#ここでGemfile.lockとGemfileがあるかどうかの場合
+#ここでGemfile.lockがあれば消す
 if [ -e Gemfile ]; then 
   rm Gemfile.lock
 fi
