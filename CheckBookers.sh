@@ -12,7 +12,7 @@ readonly GITHUB_URL=$1
 dir_name=BookersRspecTest
 
 cd .. #このリポジトリから抜ける
-rm -rf $dirname #同じ名前のディレクトリを強制消去
+rm -rf $dir_name #同じ名前のディレクトリを強制消去
 git clone $GITHUB_URL $dir_name
 
 cd $dir_name
