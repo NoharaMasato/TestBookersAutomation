@@ -31,7 +31,7 @@ fi
 rm -rf $dir_name #同じ名前のディレクトリを強制消去
 git clone $GITHUB_URL $dir_name
 
-cd $dir_name
+cd $dir_name #チェックしたいディレクトリに移動する
 
 if [ ! -f Gemfile ]; then
   echo "git clone したディレクトリにGemfileがありません"
